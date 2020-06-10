@@ -62,43 +62,43 @@ This repository contains 30 Topics on FRONT-END Technologies like HTML/CSS/REACT
   
    **Example Code (let):**
 
-    ```javascript
+  ```javascript
       for(let i=0;i<10;i++) {
       console.log(i); //i is visible thus is logged in the console as 0,1,2,….,9
        }
       console.log(i); //throws an error as “i is not defined” because i is not visible
-    ```
+  ```
    **Example Code (var):**
 
-    ```javascript
+  ```javascript
        for(var i=0; i<10; i++) {
        console.log(i); //i is visible thus is logged in the console as 0,1,2,….,9
        }
        console.log(i); //i is visible here too. thus is logged as 10.
-    ```
+  ```
 
  ## c.) var on top-level binds to the global object.
   Var on the top-level binds to the global object (window object) while let doesn’t.
   
    **Example :**
 
-    ```javascript
+  ```javascript
       var x = ‘global’;
       let y = ‘global’;
       console.log(this.x); // “global”
       console.log(this.y); // undefined
-    ```
+  ```
 
 ## d.) Redeclaration
   In the case of var, redeclaration is possible while in the case of let redeclaration is not possible.
   
    **Example Code:**
 
-    ```javascript
+  ```javascript
      var foo = “foo1”;
      var foo = “foo2”; // No problem, ‘foo’ is replaced.
      let bar = “bar1”;
      let bar = “bar2”; // SyntaxError: Identifier ‘bar’ has already been declared
-    ```
+  ```
     
 **[⬆ back to top](#lists-of-questions)**
