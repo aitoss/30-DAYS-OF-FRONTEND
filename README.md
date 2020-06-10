@@ -13,43 +13,43 @@ This repository contains 30 Topics on FRONT-END Technologies like HTML/CSS/REACT
      3. Top-level Binding
      4. Redeclaration Rules.
      
-    ## a.) Variable hoisting is done for variables declared with var and not with let
-      ### Ques:  What does hoisting mean?
-       Ans: Hoisting is a mechanism in javascript where all the variables declared with var and declared functions are                   moved to the top of their scope before the actual execution of the code starts. In case you wondered why you                 were able to call functions before the declaration. This was the reason.
-            So, for var what happens is you can use the variable before the declaration and the engine will not throw an                 error while executing the code.
+  ## a.) Variable hoisting is done for variables declared with var and not with let
+   ### Ques:  What does hoisting mean?
+    Ans: Hoisting is a mechanism in javascript where all the variables declared with var and declared functions are                   moved to the top of their scope before the actual execution of the code starts. In case you wondered why you                 were able to call functions before the declaration. This was the reason.
+          So, for var what happens is you can use the variable before the declaration and the engine will not throw an                 error while executing the code.
            
-      **Example Code (var):**
+   **Example Code (var):**
 
     ```javascript
        console.log(a);
        var a=10;
        console.log(a);
     ```
-     **After Hoisting:**
+   **After Hoisting:**
     ```javascript
        var a;
        console.log(a);
        a=10;
        console.log(a);
     ```
-    **Result**
+   **Result**
     ```javascript
        undefined
        10
     ```
     
-     **Example Code (let):**
+   **Example Code (let):**
 
     ```javascript
        console.log(a);
        let a=10;
     ```
-     **After Hoisting:**
+   **After Hoisting:**
     ```javascript
        console.log(a);
        let a=10;
     ```
-    **Result**
+   **Result**
     ```javascript
        Line 1: ReferenceError: Cannot access 'a' before initialization
     ```
