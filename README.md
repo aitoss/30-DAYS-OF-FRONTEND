@@ -102,4 +102,4 @@ This repository contains 30 Topics on FRONT-END Technologies like HTML/CSS/REACT
 
   - For more information refer to [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting/) by [Ben Cherry](http://www.adequatelygood.com/).
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#lists-of-questions)**
