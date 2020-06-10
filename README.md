@@ -15,44 +15,47 @@ This repository contains 30 Topics on FRONT-END Technologies like HTML/CSS/REACT
      
   ## a.) Variable hoisting is done for variables declared with var and not with let
    ### Ques:  What does hoisting mean?
-    Ans: Hoisting is a mechanism in javascript where all the variables declared with var and declared functions are                   moved to the top of their scope before the actual execution of the code starts. In case you wondered why you                 were able to call functions before the declaration. This was the reason.
-          So, for var what happens is you can use the variable before the declaration and the engine will not throw an                 error while executing the code.
+   Ans: Hoisting is a mechanism in javascript where all the variables declared with var and declared functions are                   moved to the top of their scope before the actual execution of the code starts. In case you wondered why you                 were able to call functions before the declaration. This was the reason.
+        So, for var what happens is you can use the variable before the declaration and the engine will not throw an                 error while executing the code.
            
    **Example Code (var):**
-
-    ```javascript
-       console.log(a);
-       var a=10;
-       console.log(a);
-    ```
+   
+   ```javascript
+        console.log(a);
+        var a=10;
+        console.log(a);
+   ```
    **After Hoisting:**
-    ```javascript
-       var a;
-       console.log(a);
-       a=10;
-       console.log(a);
-    ```
+   
+   ```javascript
+        var a;
+        console.log(a);
+        a=10;
+        console.log(a);
+   ```
    **Result**
-    ```javascript
-       undefined
-       10
-    ```
     
+   ```javascript
+        undefined
+        10
+   ```
    **Example Code (let):**
-
-    ```javascript
-       console.log(a);
-       let a=10;
-    ```
+  
+   ```javascript
+        console.log(a);
+        let a=10;
+   ```
    **After Hoisting:**
-    ```javascript
-       console.log(a);
-       let a=10;
-    ```
+   
+   ```javascript
+        console.log(a);
+        let a=10;
+   ```
    **Result**
-    ```javascript
-       Line 1: ReferenceError: Cannot access 'a' before initialization
-    ```
+   
+   ```javascript
+        Line 1: ReferenceError: Cannot access 'a' before initialization
+   ```
     
   ## b.) var is scoped to the immediate outer function.
   var is scoped to the immediate outer function of where the var declaration is done, while let is block scoped.
