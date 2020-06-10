@@ -102,3 +102,8 @@ This repository contains 30 Topics on FRONT-END Technologies like HTML/CSS/REACT
   ```
     
 **[⬆ back to top](#lists-of-questions)**
+
+
+## Contributors
+* Sudhanshu Joshi - [SJoshi7](https://github.com/SJoshi7)
+* Akshay Sharma - [AkshaySharma008](https://github.com/AkshaySharma008)
