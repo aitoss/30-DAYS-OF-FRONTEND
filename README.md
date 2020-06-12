@@ -124,7 +124,7 @@ This repository contains 30 Topics on FRONT-END Technologies like HTML/CSS/REACT
      let bar = “bar2”; // SyntaxError: Identifier ‘bar’ has already been declared
   ```
     
-**[⬆ back to top](#lists-of-questions)**
+**[⬆  back to top](#lists-of-questions)**
 
 
 ## Contributors
