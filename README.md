@@ -3,6 +3,29 @@ This repository contains 30 Topics on FRONT-END Technologies like HTML/CSS/REACT
 
 ## Lists of Questions
 1. [What is the difference between 'var', 'let' and 'const' keywords in Javascript?](#answer-1)
+2. [What is the best way to include a Javascript file in a HTMl document? - like where should we include it, how we include  it and why?](#answer-2)
+3. [What is the difference between a Library and a Framework? It would be great if you list some examples too.](#answer-3)
+4. [What is Specificity in CSS and why is it important?](#answer-4)
+5. [What is Event Bubbling and Event Capturing in Javascript?](#answer-5)
+6. [How do we handle asynchronous functionality in javascript? (Read about - Callbacks, Promises, Async Await and understand their differences.)](#answer-6)
+7. [What is Lazy Loading and why should we use it ? (with some example use cases)](#answer-7)
+8. [(React#1): Why react over traditional web development?](#answer-8)
+9. [What is Browser Storage? Understand/List down some of its use cases. (Explore - cookies  , web storage [ local storage, session storage] and understand the differences)](#answer-9)
+10. [(React#2): What is state and what are props in react? Understand them thoroughly as they are the most important part of react. Understand which should be used when and then identify the difference between functional components and class components.](#answer-10)
+11. [What is the "this" keyword and how does it work?](#answer-11)
+12. [(React#3): What is setState, why do we use setState to change the value of state instead of just asssigning a new value and how does it works?](#answer-12)
+13. [What do you understand by Explicit Binding? Understand the use and differences(good and bad parts) between .call, .bind, .apply (For those learning react, try to figure out how bind is used at places)](#answer-13)
+14. [(React#4): What do you understand by 'lifecycle of a component' in react? Undertstand different lifecycle methods and their use cases.](#answer-14)
+15. [What are the different CSS positions? Understand them properly, figure out their use cases and compare them.](#answer-15)
+16. [Is Javascript Object-Oriented? State reasons for your answer.](#answer-16)
+17. [What do you understand by programming paradigm? Explore its types and then try to understand which programming paradigm does Javascript follows!](#answer-17)
+18. [(React#5): What are Keys in react and why are they important?](#answer-18)
+19. [(React#6): Explain about events in react and how do we handle/use them.](#answer-19)
+20. [What are flexbox? Explore and understand (by writing sample codes) its various usage.](#answer-20)
+21. [ What are .map(), .filter() and .reduce? Understand their usage, difference and also try out sample code for each one of them.](#answer-21)
+22. [What is DOM? Explain your understanding of it and state some good usage/facts/features around it.](#answer-22)
+23. [What is the significance, and what are the benefits, of including 'use strict' at the beginning of a JavaScript source file?](#answer-23)
+24. [What are closures? Explain its importance and use.](#answer-24)
 
 
 ## Answer 1
