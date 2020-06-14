@@ -128,7 +128,7 @@ This repository contains 30 Topics on FRONT-END Technologies like HTML/CSS/REACT
 
 ## Answer 2
   ### About JavaScript
-  JavaScript, also abbreviated to JS, is a programming language used inweb development and nowadays in ML too. As one of the  core technologiesof the web alongside HTML and CSS, JavaScript is used to make webpagesinteractive and to build web apps.
+  JavaScript, also abbreviated to JS, is a programming language used in web development and nowadays in ML too. As one of the  core technologies of the web alongside HTML and CSS, JavaScript is used to make webpages interactive and to build web apps.
   
   ### Features :
   •JavaScript   is   a   scripting   language   and   lightweight   programminglanguage 
@@ -158,27 +158,26 @@ This repository contains 30 Topics on FRONT-END Technologies like HTML/CSS/REACT
    ```
    <script src="myScript.js"></script>
    ```
-   External   scripts   are   practical   when   the   same   code   is   used   in   manydifferent   web   pages.   Placing    scripts   in   external   files   has   someadvantages:
-   •It separates HTML and code 
-   •It makes HTML and JavaScript easier to read and maintain 
-   •Cached JavaScript files can speed up page loadsScripts can be placed in the <body>, or in the <head> section of anHTML page, or in both.
+ External   scripts   are   practical   when   the   same   code   is   used   in   manydifferent   web   pages.   Placing    scripts   in   external   files   has   someadvantages:
+  •It separates HTML and code 
+  •It makes HTML and JavaScript easier to read and maintain 
+  •Cached JavaScript files can speed up page loadsScripts can be placed in the <body>, or in the <head> section of anHTML page, or in both.
   
-  It was a <b> best practice</b> in older times to put JavaScript <script> tagsjust before the closing </body> tag rather   than in the <head> section ofyour HTML.The reason for this is that HTML loads from top to bottom. The headloads first, then the body, and then everything inside the body. If weput our JavaScript links in the head section, the entire JavaScript file will   load   before   loading   any   of   the   HTML,   which   could   cause   a   few problems.
-  1.If you have code in your JavaScript that alters HTML as soon as theJavaScript file loads, there won't actually be any HTML elementsavailable for it to affect yet, so it will seem as though theJavaScript code isn't working, and you may get errors. 
-  2.If you have a lot of JavaScript, it can visibly slow the loading ofyour page because it loads all of the JavaScript before it loadsany of the HTML. 
-  When you place your JavaScript links at the bottom of your HTML body, itgives the HTML time to load before any of the JavaScript loads, whichcan prevent errors, and speed up website response time.
-  This approach has its own problem:
-  The   browser   cannot   start   downloading   the   scripts   until   the   entiredocument   is   parsed.   For   larger   websites   with   large   scripts   &stylesheets, being able to download the script as soon as possible isvery important for performance. If your website doesn't load within 2seconds, people will go to another website.
-  In an optimal solution, the browser would start downloading your scriptsas soon as possible, while at the same time parsing the rest of yourdocument.
+It was a <b> best practice</b> in older times to put JavaScript <script> tagsjust before the closing </body> tag rather   than in the <head> section ofyour HTML.The reason for this is that HTML loads from top to bottom. The headloads first, then the body, and then everything inside the body. If weput our JavaScript links in the head section, the entire JavaScript file will   load   before   loading   any   of   the   HTML,   which   could   cause   a   few problems.
+1.If you have code in your JavaScript that alters HTML as soon as theJavaScript file loads, there won't actually be any HTML elementsavailable for it to affect yet, so it will seem as though theJavaScript code isn't working, and you may get errors. 
+2.If you have a lot of JavaScript, it can visibly slow the loading ofyour page because it loads all of the JavaScript before it loadsany of the HTML. 
+When you place your JavaScript links at the bottom of your HTML body, itgives the HTML time to load before any of the JavaScript loads, whichcan prevent errors, and speed up website response time.
+This approach has its own problem:
+The   browser   cannot   start   downloading   the   scripts   until   the   entiredocument   is   parsed.   For   larger   websites   with   large   scripts   &stylesheets, being able to download the script as soon as possible isvery important for performance. If your website doesn't load within 2seconds, people will go to another website.
+In an optimal solution, the browser would start downloading your scriptsas soon as possible, while at the same time parsing the rest of yourdocument.
   
-  Before knowing the optimal solution , you must know how actually scriptfile treated by the browser, when browser load it -
-  
-  1.Fetch the HTML page (e.g. index.html) 
-  2.Begin parsing the HTML 
-  3.The parser encounters a <script> tag referencing an external scriptfile. 
-  4.The browser requests the script file. Meanwhile, the parser blocksand stops parsing the other HTML on your page. 
-  5.After some time the script is downloaded and subsequently executed.6.The parser continues parsing the rest of the HTML document. 
-  Step   #4   causes   a   bad   user   experience.   Your   website   basically   stopsloading until you've downloaded all scripts. If there's one thing thatusers hate it's waiting for a website to load.
+Before knowing the optimal solution , you must know how actually scriptfile treated by the browser, when browser load it - 
+1.Fetch the HTML page (e.g. index.html) 
+2.Begin parsing the HTML 
+3.The parser encounters a <script> tag referencing an external scriptfile. 
+4.The browser requests the script file. Meanwhile, the parser blocksand stops parsing the other HTML on your page. 
+5.After some time the script is downloaded and subsequently executed.6.The parser continues parsing the rest of the HTML document. 
+Step   #4   causes   a   bad   user   experience.   Your   website   basically   stopsloading until you've downloaded all scripts. If there's one thing thatusers hate it's waiting for a website to load.
 
 ### The best and modern approach
 Today, browsers support the async and defer attributes on scripts. Theseattributes tell the browser it's safe to continue parsing while thescripts are being downloaded.
@@ -195,7 +194,7 @@ According   to   http://caniuse.com/#feat=script-async,   97.78%   of   allbrows
  <script type="text/javascript" src="path/to/script1.js" defer></script>
  <script type="text/javascript" src="path/to/script2.js" defer></script>
  ```
- Scripts   with   the   defer   attribute   are   executed   in   order   (i.e.   firstscript 1, then script 2). This also does not block the browser.Unlike async scripts, defer scripts are only executed after the entiredocument has been loaded.According   to   http://caniuse.com/#feat=script-defer,   97.79%   of   allbrowsers support this. 98.06% support it at least partially.
+Scripts   with   the   defer   attribute   are   executed   in   order   (i.e.   firstscript 1, then script 2). This also does not block the browser.Unlike async scripts, defer scripts are only executed after the entiredocument has been loaded.According   to   http://caniuse.com/#feat=script-defer,   97.79%   of   allbrowsers support this. 98.06% support it at least partially.
 
 ## Conclusion:
 The current state-of-the-art is to put scripts in the <head> tag and usethe async or defer attributes. This allows your scripts to be downloadedasap without blocking your browser.The good thing is that your website should still load correctly on the2% of browsers that do not support these attributes while speeding upthe other 98%.
