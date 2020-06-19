@@ -201,6 +201,42 @@ Scripts   with   the   defer   attribute   are   executed   in   order   (i.e.  
 
 ## Conclusion:
 The current state-of-the-art is to put scripts in the <head> tag and usethe async or defer attributes. This allows your scripts to be downloaded asap without blocking your browser.The good thing is that your website should still load correctly on the 2% of browsers that do not support these attributes while speeding upthe other 98%.
+  
+  ## Answer 4
+ Before trying to understand <b>Specificity</b>, lets understand its need first.
+ ### Need of Specificity Rules
+ Since the html markup on its own was looking very blunt. Developer felt the need to include a styling language. Thats more or less the origin of CSS (which later evolved to CSS3 or other precompilier like SCSS or LESS, that we use today). Now for targeting our markup from css, we needed to select its tags. For that developers introduced <b>SELECTORS</b>.
+ So,Now we can select the markup by using class , id ,  name of the html tag, name of parent html, use + or space , pseudo selectors etc.
+ Hence, the selector can be more or less specific. hence for correct follow up of CSS rules while using multiple selectors or Inline vs External styling, we needed rules.
+ 
+ ## Insight
+ CSS Specificity is one of the mostdifficult concepts to grasp in Cascading Stylesheets. The different weight of selectors is usually the reason why your CSS-rules don’t apply to some elements, although you think they should have. In order to minimize the time for bug hunting you need to understand, how browsers interpret your code. And to understand that, you need to have a firm understanding on how specificity works. In most cases such problems are caused by the simple fact that somewhere among your CSS rules you’ve defined a more specific selector.
+ 
+ 
+  ## An Overview
+  <ui>
+  <li>•Specificity determines, which CSS rule is applied by the browsers.</li>
+<li>•Specificity is usually the reason why your CSS-rules don’t apply to some elements, although you think they should.</li>
+  <li>•Every selector has its place in the specificity hierarchy.</li>
+  <li>•If two selectors apply to the same element, the one with higher specificity wins.</li>
+<li>•There are four distinct categories which define the specificity level of a given selector: inline styles, IDs, classes, attributes, and elements.</li>
+  <li>•You can understand specificity if you love Star Wars: CSS Specificity Wars.</li>
+  <li>•You can understand specificity if you love poker: CSS Specificity for Poker Players</li>
+  <li>•When selectors have an equal specificity value, the latest rule is the one that counts.</li>
+<li>•When selectors have an unequal specificity value, the more specific rule is the one that counts.</li>
+  <li>•Rules with more specific selectors have a greater specificity.</li>
+  <li>•The last rule defined overrides any previous, conflicting rules.</li>
+  <li>•The embedded style sheet has a greater specificity than other rules.</li>
+  <li>•ID selectors have a higher specificity than attribute selectors.</li>
+  <li>•You should always try to use IDs to increase the specificity.</li>
+  <li>•A class selector beats any number of element selectors.</li>
+  <li>•The universal selector and inherited selectors have a specificity of 0, 0, 0, 0.</li>
+  <li>•You can calculate CSS specificity with CSS Specificity Calculator.</li>
+  </ui>
+
+ 
+ 
+  
 
 **[⬆  back to top](#lists-of-questions)**
 
